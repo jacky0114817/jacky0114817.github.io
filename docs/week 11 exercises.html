@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.full {
+  width: 100%;
+  border: 3px solid #4CAF50;
+}
+div.half {
+  width: 50%;
+  border: 4px solid #4CAF50;
+}
+div.quarter {
+  width: 25%;
+  border: 5px solid #4CAF50;
+}
+p.ex1 {
+  max-height: 70px;
+  overflow: auto;
+}
+p.ex2 {
+  max-width: 200px;
+}
+div.ex1 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: scroll;
+}
 
+div.ex2 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+div.ex3 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: auto;
+}
+
+div.ex4 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: visible;
+}
+div.pad {
+  padding: 50px;
+  border: 2px solid #4CAF50;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+p.normal {
+  border: 4px solid cyan;
+}
+
+p.round1 {
+  border: 4px solid cyan;
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 4px solid cyan;
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 4px solid cyan;
+  border-radius: 12px;
+}
+
+p.round4 {
+  border: 4px solid cyan;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+hr {padding: 0px; border: 4px solid black;}
+
+p.no {
+	outline-color:red; 
+	border-style: dotted; 
+    border-width: 5px;
+    outline-style: none;
+    outline-width: 10px;
+}
+p.sol{
+	outline-color:red;
+	border-style: dotted;
+    border-width: 5px;
+    outline-style: solid;
+    outline-width: 10px;
+}
+p.green {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  text-align: center; 
+  border-style: dotted; 
+  border-width: 5px;
+}
+div.a {
+  margin: 90px;
+  border: 1px solid #4CAF50;
+}
+div.b {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: cyan;
+}
+div.c {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: pink;
+}
+div.d {
+  width:300px;
+  margin: auto;
+  border: 1px solid red;
+}
+h2.a {
+  visibility: visible;
+}
+
+h2.b {
+  visibility: hidden;
+}
+</style>
+</head>
+<body>
+<a href="https://jacky0114817.github.io/" style="text-decoration:none;color:#FFB10C"><b>Home</b></a>
+<h2>CSS width property</h2>
+<div class="full">100% width</div>
+<div class="half">50% width.</div>
+<div class="quarter">25% width.</div>
+<hr />
+<h2>max-height 70px</h2>
+<p class="ex1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+<h2>max-width 200px:</h2>
+<p class="ex1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+<hr />
+<h2>scroll</h2>
+<div class="ex1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>hidden</h2>
+<div class="ex2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>auto</h2>
+<div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>visible (default)</h2>
+<div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+<hr />
+<br /><br /><br /><br /><br />
+<h2>Padding</h2>
+<div class="pad">This element has a padding of 50px.</div>
+<hr />
+<h2>The border-style</h2>
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<hr />
+<h2>The border-radius</h2>
+
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+<p class="round4">Special border</p>
+<hr />
+<h2>The outline-style</h2>
+<p>A default outline</p>
+<p class="no">A none outline</p>
+<p class="sol">A solid outline</p>
+<p class="green">This element has a 2px black border and a green outline with a width of 10px.</p>
+<hr />
+<h2>Margins</h2>
+<div class="a">This element has a margin of 90px.</div>
+<hr />
+<div class="b">>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+<hr />
+<div class="c">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+<hr />
+<div class="d">
+This div will be horizontally centered because it has margin: auto;
+</div>
+<div class="d">
+This div will be horizontally centered because it has margin: auto;
+</div>
+<hr />
+<h1>The visibility Property</h1>
+
+<h2 class="a">This heading is visible</h2>
+
+<h2 class="b">This heading is hidden</h2>
+
+<p>the hidden heading still takes up space on the page.</p>
+<hr />
+</body>
+</html>
