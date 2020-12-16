@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {list-style-type: disc;}
+ul.b {list-style-type: square;}
+ol.c {list-style-type: armenian;}
+ol.d {list-style-type: cjk-ideographic;}
 
+ul.c {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+li.a { 
+  padding-left: 16px; 
+}
+li.a::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: red; /* Or a color you prefer */
+}
+
+ul.d {
+  list-style-image: url('images/marker.png');
+}
+</style>
+</head>
+<body>
+<ul class="a">
+  <li>Disc type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Square type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ol class="c">
+  <li>Armenian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Cjk-ideographic type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<hr />
+<ul class="c">
+  <li class="a">Coffee</li>
+  <li class="a">Tea</li>
+  <li class="a">Coca Cola</li>
+</ul>
+<hr />
+<ul class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<hr />
+
+</body>
+</html>
