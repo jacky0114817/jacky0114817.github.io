@@ -1,39 +1,216 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Jacky's website</title>
-	</head>
-	<body background="https://images5.alphacoders.com/687/687083.jpg" style="background-position:center;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;" text="#A3A3FF">
-		<a href="https://jacky0114817.github.io/" style="text-decoration:none;color:#FFB10C">Home</a>
-	<hr>
-		<h1 id="Jacky's Past">Jacky's Past</h1>
-		<p>Learned the piano</p>
+<title>Jacky Tu's website</title>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #FFE8BF;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #C9FFFF;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFB5B5;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #7C00D6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #FFE8BF;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: #E8FFE8;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFABFF;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Know more about me!</h1>
+</div>
+
+<div class="topnav">
+  <a href="https://jacky0114817.github.io/">Home</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Favorite  Korean group</h2>
+      <h5>IZ*ONE is the best!!!</h5>
+      <img src="https://wallpaperaccess.com/full/1312065.jpg" alt="space" width="500" height="350"/>
+      <p>Other korean group also are good.</p>
+	  <h5>Other group</h5>
+		<ul>
+			<li>Girls' Generation</li>
+			<li>TWICE</li>ITZY
+			<li>ITZY</li>
+		</ul>
+    </div>
+    <div class="card">
+      <h2>Sports</h2>
+      <h5>Soccer ^^</h5>
+      <img src="https://daily.jstor.org/wp-content/uploads/2018/06/soccer_europe_1050x700.jpg" alt="soccer" width="360" height="280"/>
+	  <p>Swimming</p>
+	  <p>Basketball</p>
+	  <p>Badminton</p>
+	  <p>Table tennis</p>
+    </div>
+	<div class="card">
+	<h2><dfn>Class tabletime</dfn></h2>
+      <h5>You can find me in these times.</h5>
+      <table border="1">
+	  <tr>
+		<th></th>
+		<th>Monday</th>
+		<th>Tuesday</th>
+		<th>Wednesday</th>
+		<th>Thursday</th>
+		<th>Friday</th>
+	  </tr>
+	  <tr>
+		<th>8:10am</th>
+		<td align="center">None</td>
+		<td align="center">None</td>
+		<td align="center">None</td>
+		<td rowspan="2" align="center">None</td>
+		<td rowspan="2" align="center">English</td>		
+	  <tr>
+		<th>9:10am</th>
+		<td rowspan="3" align="center">Math</td>
+		<td rowspan="3" align="center">Computer<br/>Programming</td>
+		<td rowspan="3" align="center">Physics</td>
+	  </tr>
+	  <tr>
+		<th>10:10am</th>
+		<td rowspan="2" align="center">PE</td>
+		<td rowspan="2" align="center">None</td>
+	  </tr>
+	  <tr>
+		<th>11:10am</th>
+	  </tr>
+	  <tr>
+		<th>12:00noon</th>
+		<td colspan="5" align="center">Lunch time</td>
+	  </tr>
+	  <tr>
+		<th>13:10pm</th>
+		<td rowspan="2" align="center">None</td>
+		<td rowspan="2" align="center">Computer<br/>Programming<br/>Expreriment</td>
+		<td rowspan="3" align="center">Web<br/>Programming<br/>(Easy)</td>
+		<td rowspan="6" align="center">None</td>
+		<td rowspan="2" align="center">Chinese</td>
+	  </tr>
+	  <tr>
+		<th>14:10pm</th>
+	  </tr>
+	  <tr>
+		<th>15:10pm</th>
+		<td rowspan="4" align="center">Introduction<br/>to<br/>Computer Science</td>
+		<td rowspan="4" align="center">None</td>
+		<td rowspan="4" align="center">None</td>
+	  </tr>
+	  <tr>
+		<th>16:10pm</th>
+		<td rowspan="4" align="center">None</td>
+	  </tr>
+	  <tr>
+		<th>17:10pm</th>
+	  </tr>
+	  <tr>
+		<th>18:00pm</th>
+	</tr>
+	</table>
+	</div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Favorite video</h2>
+      <video src="videos/Billie Eilish, Khalid - lovely.mp4" width="400" height="300" preload controls loop></video>
+      <video src="videos/Billie Eilish -Bad Guy.mp4" width="400" height="300" preload controls loop></video></p>
+	  <p>Billie Eilish is well-known singer</p>
+    </div>
+    <div class="card">
+      <h3>Favorite song</h3>
+      <audio src="audio/LIGHT YEARS AWAY -audio.mp3" controls autoplay></audio>
+	  <p>This is the song called "LIGHT YEARS AWAY(光年之外)" which is sung by G.E.M.鄧紫棋 
+    </div>
+    <div class="card">
+      <h3>Past</h3>
+      <p>Learned the piano</p>
 		<p>Participated in the chorus</p>
 		<p>Danced the song <span class="Korean Song from the group BLACKPINK">"BOOMBAYA"</span> with my best friends at the graduation party(junior high school)</p>
 		<p>Danced the song "What Is Love" with friends at the graduation party(high school)</p>
-	<hr>
-	<div class="Sports I like">
-		<h2>Sports</h2>
-		<p>Swimming</p>
-		<p>Basketball</p>
-		<p>Soccer</p>
-		<p>Badminton</p>
-		<p>Table tennis</p>
-	</div><!--end of Sports I like-->
-	<hr>
-		<h2>Favorite Korean Group</h2>
-		<p>Girls' Generation</p>
-		<p>TWICE</p>
-		<p>IZ*ONE</p>
-		<p>ITZY</p>
-	<hr>
-		<h2>Favorite video</h2>
-		<video src="videos/Billie Eilish, Khalid - lovely.mp4" width="400" height="300" preload controls loop></video>
-		<p>Besides this song(Lovely), Billie Eilish's the most famous song is "Bad Guy".
-		<p><video src="videos/Billie Eilish -Bad Guy.mp4" width="400" height="300" preload controls loop></video></p>
-	<hr>
-		<h2>Favorite song</h2>
-		<audio src="audio/LIGHT YEARS AWAY -audio.mp3" controls autoplay></audio>
-		<p>This is the song called "LIGHT YEARS AWAY(光年之外)" which is sung by G.E.M.鄧紫棋 
-	</body>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+</body>
 </html>
